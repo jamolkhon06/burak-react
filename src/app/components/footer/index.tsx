@@ -50,12 +50,10 @@ export default function Footer() {
               <Box>
                 <Box className={"foot-category-title"}>Find us</Box>
                 <Box
-                  direction={"column"}
-                  sx={{ mt: "20px" }}
+                  sx={{ mt: "20px", flexDirection: "column", justifyContent: "space-between" }}
                   className={"foot-category-link"}
-                  justifyContent={"space-between"}
                 >
-                  <Box direction={"row"} className={"find-us"}>
+                  <Box className={"find-us"} sx={{ flexDirection: "row" }}>
                     <span>L.</span>
                     <div>Downtown, Dubai</div>
                   </Box>
