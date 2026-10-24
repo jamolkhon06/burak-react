@@ -45,6 +45,5 @@ export function HomeNavbar() {
                 </Stack>
             </Container>
         </div>
-
     )
 }
