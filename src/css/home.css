@@ -3,7 +3,8 @@
   height: auto;
 }
 
-/* STATISTICS*/
+/** STATISTICS **/
+
 .homepage .static-frame {
   width: 100%;
   height: 236px;
@@ -23,8 +24,8 @@
   height: 116px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .homepage .static-frame .info .static-box .static-num {
@@ -44,10 +45,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
-  color: #d7b686;
+  color: #d7b586;
 }
 
-/* POPULAR DISHES*/
+/** POPULAR DISHES **/
+
 .homepage .popular-dishes-frame {
   width: 100%;
   height: 580px;
@@ -62,7 +64,7 @@
   align-items: center;
 }
 
-.homepage .popular-dishes-frame .category-title {
+.homepage .popular-dishes-frame .popular-section .category-title {
   text-align: center;
   font-family: "Roboto Serif";
   font-size: 36px;
@@ -73,7 +75,7 @@
   color: #000;
 }
 
-.homepage .popular-dishes-frame .cards-frame {
+.homepage .popular-dishes-frame .popular-section .cards-frame {
   width: 100%;
   margin-top: 43px;
   display: flex;
@@ -88,8 +90,11 @@
 }
 
 .homepage .popular-dishes-frame .cards-frame .card .card-cover {
-  background:
-    linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0) 200px),
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0) 200px
+    ),
     linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 300px);
 }
 
@@ -100,7 +105,7 @@
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -108,7 +113,8 @@
   color: #e3c08d;
 }
 
-/* NEW PRODUCTS */
+/** NEW PRODUCTS **/
+
 .homepage .new-products-frame {
   width: 100%;
   height: 605px;
@@ -156,7 +162,7 @@
   background: #ff9200;
   box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -213,7 +219,7 @@
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -221,7 +227,8 @@
   color: #e3c08d;
 }
 
-/* ADVERTISEMENT */
+/** ADVERTISEMENT **/
+
 .homepage .ads-restaurant-frame {
   width: 100%;
   height: 693px;
@@ -235,66 +242,54 @@
   width: 100%;
   background: #0c0e12;
   display: flex;
-  box-shadow: 0px -8px 90px rgb(215, 215, 255);
+  box-shadow: 0px -8px 90px rgb(215 215 255);
   transform: scale(1.5);
   overflow: hidden;
 }
 
-/* ACTIVE USERS   */
+/** ACTIVE USERS **/
 
 .homepage .active-users-frame {
   width: 100%;
   height: 550px;
-  display: flex;
   background: #f8f8ff;
+  display: flex;
 }
 
 .homepage .active-users-frame .main {
-  margin-top: 56px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .homepage .active-users-frame .category-title {
-  font-family: "Roboto Serif";
-  font-size: 36px;
+  font-family: "Dancing Script";
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #343434;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
 }
 
-.homepage .active-users-frame .main .cards-frame {
+.homepage .cards-frame {
   width: 100%;
-  margin: 47px 2px 2px 2px;
+  margin-top: 20px;
   flex-direction: row;
-  justify-content: space-between;
 }
 
-.homepage .active-users-frame .main .card {
-  height: 293px;
-  width: 305px;
+.homepage .cards-frame .card {
+  margin: 5px;
+  min-height: 305px;
+  min-width: 305px;
   cursor: pointer;
 }
 
-.homepage .active-users-frame .product-detail {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  margin-top: -12px;
-  border-top: 1px solid;
-  border-color: #f8f8ff;
-  background-color: #fafbfb;
+.homepage .cards-frame .member-nickname {
+  font-size: medium;
+  text-align: center;
 }
 
-.homepage .active-users-frame .product-detail .title {
-  width: 65px;
-  font-weight: 900;
-}
-
-.homepage .active-users-frame .no-data {
+.homepage .cards-frame .no-data {
   width: 100%;
   height: 300px;
   display: flex;
