@@ -11,13 +11,14 @@ import HelpPage from "./screens/helpPage";
 import "../css/app.css";
 import "../css/navbar.css";
 import "../css/footer.css";
+import Test from "./screens/Test";
 
 function App() {
   const location = useLocation();
 
   return (
     <>
-      {location.pathname === '/' ? <HomeNavbar /> : <OtherNavbar />}
+      {location.pathname === "/" ? <HomeNavbar /> : <OtherNavbar />}
       <Switch>
         <Route path="/products">
           <ProductsPage />
@@ -32,17 +33,13 @@ function App() {
           <HelpPage />
         </Route>
         <Route path="/">
-          <HomePage />
+          <Test />
+          {/* <HomePage /> */}
         </Route>
       </Switch>
       <Footer />
     </>
-  )
+  );
 }
 
 export default App;
-
-
-
-
-
