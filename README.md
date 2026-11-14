@@ -1,46 +1,107 @@
-# Getting Started with Create React App
+# Burak — Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+A React-based frontend application built with TypeScript. The project follows a modular architecture with reusable components, organized application screens, centralized state management, and a structured library for shared types, data, and utilities.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+- **Library:** React
+- **Language:** TypeScript
+- **State Management:** Redux
+- **State Selection:** Reselect
+- **UI Components:** Material UI
+- **Styling:** CSS
+- **Architecture:** Component-based architecture
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```text
+src/
+├── app/
+│   ├── components/       # Reusable UI components
+│   ├── MaterialTheme/    # Material UI theme configuration
+│   ├── screens/
+│   │   ├── helpPage/
+│   │   ├── homePage/
+│   │   ├── ordersPage/
+│   │   ├── productsPage/
+│   │   └── userPage/
+│   ├── App.tsx
+│   ├── hooks.ts
+│   └── store.ts
+│
+├── css/                  # Global styles
+│
+├── lib/
+│   ├── data/             # Shared application data
+│   ├── enums/            # Enumerations
+│   └── types/            # TypeScript interfaces and types
+│
+├── index.tsx
+└── setupTests.ts
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Application Features
 
-### `npm test`
+- **Dashboard:** Overview of important application statistics.
+- **Popular Dishes:** Displays popular food items.
+- **New Dishes:** Showcases recently added dishes.
+- **Orders Management:** Dedicated screen for managing orders.
+- **Products Management:** Organized product management interface.
+- **User Management:** Dedicated user-related functionality.
+- **Help Center:** Support and help-related interface.
+- **Active Users:** Displays user activity information.
+- **Events:** Dedicated events section.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Architecture & State Management
 
-### `npm run build`
+The application follows a modular structure to maintain separation of concerns and improve maintainability.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Reusable Components:** Shared UI components are organized separately from individual screens.
+- **Redux Store:** Centralized application state management.
+- **Redux Slices:** State updates and actions are organized into dedicated slices.
+- **Reselect:** Memoized selectors retrieve specific data from the application state.
+- **TypeScript:** Provides type safety and structured data definitions.
+- **Custom Hooks:** Shared application hooks are maintained within the app directory.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js
+- Yarn or npm
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the repository:
 
-Instead of it, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+git clone https://github.com/jamolkhon06/burak-react
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Navigate to the project directory:
 
-## Learn More
+```bash
+cd burak-react
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn install
+```
+
+### Run the Development Server
+
+```bash
+yarn run start
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
